@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href=".css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -167,7 +167,57 @@
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <section class="carousel relative overflow-hidden">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28"
+        >
+          <div>
+            <h1
+              class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+            >
+              We specialize in UI/UX, Web Development, Digital Marketing.
+            </h1>
+
+            <p class="mt-6 max-w-xl leading-7 text-slate-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus
+              consequat varius nisi quis, posuere magna.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <a
+                href="#"
+                class="rounded-md bg-blue-600 px-7 py-4 text-center font-semibold text-white hover:bg-blue-700"
+              >
+                Get Started Now
+              </a>
+
+              <div>
+                <a href="tel:0123456789" class="font-semibold">
+                  Call us (0123) 456 – 789
+                </a>
+                <p class="mt-1 text-sm text-slate-500">
+                  For any question or concern
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute -right-5 -top-5 h-32 w-32 rounded-full bg-blue-100"
+            ></div>
+            <img
+              src="	https://base-tailwind.preview.uideck.com/images/hero.png"
+              alt="Hero illustration"
+              class="relative mx-auto w-full max-w-lg object-contain"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
 
     <!-- Back to top -->
@@ -176,6 +226,13 @@
     ></a>
 
     <!-- Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
@@ -192,7 +249,7 @@
     <script src="./libs/backtotop/util.js"></script>
 
     <!-- COUNT UP -->
-    <script src="libs/countup/jquery.countup.min.js"></script>
+    <script src="./libs/countup/jquery.countup.min.js"></script>
     <script>
       $(function () {
         $(".counter").countUp();
