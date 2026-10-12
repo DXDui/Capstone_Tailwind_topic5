@@ -1,0 +1,41 @@
+.carousel {
+  padding-top: 13rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__content {
+  display: flex;
+}
+
+.carousel-left {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1280px) {
+  .or {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .zp {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .xn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  ._o {
+    align-items: center;
+  }
+}
