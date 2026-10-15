@@ -220,7 +220,6 @@
       </section>
 
       <!-- We offer / Service -->
-
       <section class="px-4 py-20 md:px-8 lg:px-16">
         <div class="mx-auto mb-12 max-w-4xl text-center">
           <h2 class="mb-6 font-bold leading-tight text-gray-900 md:text-5xl">
@@ -358,6 +357,149 @@
           </div>
         </div>
       </section>
+
+      <!-- Pricing -->
+      <section class="pricing px-16 py-16">
+        <!-- Tiêu đề -->
+        <div class="mx-auto mb-12 max-w-5xl text-center">
+          <h2 class="mb-5 text-4xl font-bold text-gray-900">
+            We Offer Great Affordable Premium Prices.
+          </h2>
+
+          <p class="mx-auto w-1/2 text-lg text-gray-500 mb-10">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using.
+          </p>
+        </div>
+
+        <!-- Chọn chu kỳ thanh toán -->
+        <div class="mb-10 flex items-center justify-center gap-4">
+          <span id="monthlyLabel" class="font-semibold text-blue-600">
+            Bill Monthly
+          </span>
+
+          <button
+            id="billSwitch"
+            type="button"
+            class="relative h-7 w-14 rounded-full bg-blue-600"
+            aria-label="Switch billing period"
+            aria-pressed="false"
+          >
+            <span
+              id="switchCircle"
+              class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white transform translate-x-0 transition-transform duration-300"
+            ></span>
+          </button>
+
+          <span id="annuallyLabel" class="text-gray-500"> Bill Annually </span>
+        </div>
+
+        <!-- Các gói giá -->
+        <div class="mx-auto grid max-w-5xl gap-6 px-16 md:grid-cols-3">
+          <!-- Gói Starter -->
+          <div class="rounded-lg border bg-white p-6 text-center">
+            <h3 class="mb-4 text-xl font-semibold">Starter</h3>
+
+            <div class="mb-2 flex items-baseline justify-center gap-2">
+              <p
+                class="text-3xl font-bold"
+                data-monthly="29"
+                data-annually="149"
+              >
+                $29
+              </p>
+
+              <span class="billing-period">/per month</span>
+            </div>
+
+            <p class="mb-6 text-gray-500">No credit card required</p>
+
+            <a
+              href="#"
+              class="mb-6 block rounded-full bg-pink-500 px-4 py-3 text-center text-white"
+            >
+              Try for free
+            </a>
+
+            <ul class="space-y-3 text-gray-500">
+              <li>400 GB Storage</li>
+              <li>Unlimited Photos & Videos</li>
+              <li>Exclusive Support</li>
+            </ul>
+
+            <p class="mt-6">7-day free trial</p>
+          </div>
+
+          <!-- Gói Growth -->
+          <div class="rounded-lg border bg-white p-6 text-center">
+            <h3 class="mb-4 text-xl font-semibold">Growth</h3>
+
+            <div class="mb-2 flex items-baseline justify-center gap-2">
+              <p
+                class="text-3xl font-bold"
+                data-monthly="59"
+                data-annually="608"
+              >
+                $59
+              </p>
+
+              <span class="billing-period">/per month</span>
+            </div>
+
+            <p class="mb-6 text-gray-500">No credit card required</p>
+
+            <a
+              href="#"
+              class="mb-6 block rounded-full bg-blue-500 px-4 py-3 text-center text-white"
+            >
+              Try for free
+            </a>
+
+            <ul class="space-y-3 text-gray-500">
+              <li>400 GB Storage</li>
+              <li>Unlimited Photos & Videos</li>
+              <li>Exclusive Support</li>
+            </ul>
+
+            <p class="mt-6">7-day free trial</p>
+          </div>
+
+          <!-- Gói Business -->
+          <div class="rounded-lg border bg-white p-6 text-center">
+            <h3 class="mb-4 text-xl font-semibold">Business</h3>
+
+            <div class="mb-2 flex items-baseline justify-center gap-2">
+              <p
+                class="text-3xl font-bold"
+                data-monthly="139"
+                data-annually="1568"
+              >
+                $139
+              </p>
+
+              <span class="billing-period">/per month</span>
+            </div>
+
+            <p class="mb-6 text-gray-500">No credit card required</p>
+
+            <a
+              href="#"
+              class="mb-6 block rounded-full bg-pink-500 px-4 py-3 text-center text-white"
+            >
+              Try for free
+            </a>
+
+            <ul class="space-y-3 text-gray-500">
+              <li>400 GB Storage</li>
+              <li>Unlimited Photos & Videos</li>
+              <li>Exclusive Support</li>
+            </ul>
+
+            <p class="mt-6">7-day free trial</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
 
@@ -408,5 +550,8 @@
     <script>
       new WOW().init();
     </script>
+
+    <!-- Functions -->
+    <script src="./main.js"></script>
   </body>
 </html>
