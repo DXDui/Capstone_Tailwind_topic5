@@ -41,3 +41,36 @@ billSwitch.addEventListener("click", function () {
     period.textContent = isAnnually ? "/per year" : "/per month";
   });
 });
+
+// Projects Start
+
+const filterButtons = document.querySelectorAll(".project-filter");
+const projectCards = document.querySelectorAll(".project-wrapper");
+
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const selectedFilter = button.dataset.filter;
+
+    // Lọc dự án
+    projectCards.forEach(function (project) {
+      const categories = project.dataset.category.split(" ");
+
+      if (selectedFilter === "all" || categories.includes(selectedFilter)) {
+        project.classList.remove("hidden");
+      } else {
+        project.classList.add("hidden");
+      }
+    });
+
+    // Cập nhật giao diện nút đang chọn
+    filterButtons.forEach(function (item) {
+      item.classList.remove("bg-blue-600", "text-white");
+      item.classList.add("border", "border-gray-200", "text-gray-600");
+    });
+
+    button.classList.remove("border", "border-gray-200", "text-gray-600");
+
+    button.classList.add("bg-blue-600", "text-white");
+  });
+});
+// Projects End
