@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base - Tailwind - Capstone</title>
 
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- FLOWBITE -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -15,6 +24,12 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="./css/style.css" />
@@ -615,6 +630,130 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonials / Comment -->
+      <section id="testimonials" class="bg-white px-6 py-20">
+        <!-- Section Title -->
+        <div class="mx-auto mb-14 max-w-5xl text-center">
+          <h2 class="mb-5 text-4xl font-bold text-gray-900">
+            Client's Testimonials
+          </h2>
+
+          <p class="mx-auto max-w-3xl text-lg leading-8 text-gray-500">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using.
+          </p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="mx-auto max-w-4xl">
+          <div class="swiper testimonial-swiper overflow-hidden">
+            <div class="swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide user-testimonial">
+                <div class="testimonial-content">
+                  <!-- Avatar bên trái -->
+                  <img
+                    src="https://base-tailwind.preview.uideck.com/images/testimonial.png"
+                    alt="David Smith"
+                    class="testimonial-avatar"
+                  />
+
+                  <!-- Thông tin bên phải -->
+                  <div class="testimonial-info">
+                    <img
+                      src="https://base-tailwind.preview.uideck.com/images/icon-quote.svg"
+                      alt=""
+                      class="testimonial-quote"
+                    />
+
+                    <p class="testimonial-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In dolor diam, feugiat quis enim sed, ullamcorper semper
+                      ligula. Mauris consequat justo volutpat.
+                    </p>
+
+                    <div class="testimonial-footer">
+                      <div>
+                        <h3 class="testimonial-name">David Smith</h3>
+                        <p class="testimonial-role">Founder @democompany</p>
+                      </div>
+
+                      <img
+                        src="https://base-tailwind.preview.uideck.com/images/brand-light-02.svg"
+                        alt="Dropcam"
+                        class="testimonial-brand"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide user-testimonial">
+                <div class="testimonial-content">
+                  <!-- Avatar bên trái -->
+                  <img
+                    src="https://base-tailwind.preview.uideck.com/images/testimonial.png"
+                    alt="David Smith"
+                    class="testimonial-avatar"
+                  />
+
+                  <!-- Thông tin bên phải -->
+                  <div class="testimonial-info">
+                    <img
+                      src="https://base-tailwind.preview.uideck.com/images/icon-quote.svg"
+                      alt=""
+                      class="testimonial-quote"
+                    />
+
+                    <p class="testimonial-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In dolor diam, feugiat quis enim sed, ullamcorper semper
+                      ligula. Mauris consequat justo volutpat.
+                    </p>
+
+                    <div class="testimonial-footer">
+                      <div>
+                        <h3 class="testimonial-name">David Smith</h3>
+                        <p class="testimonial-role">Founder @democompany</p>
+                      </div>
+
+                      <img
+                        src="https://base-tailwind.preview.uideck.com/images/brand-light-02.svg"
+                        alt="Dropcam"
+                        class="testimonial-brand"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous / Next -->
+          <div class="mt-8 flex justify-center gap-4">
+            <button
+              type="button"
+              id="testimonialPrev"
+              aria-label="Previous testimonial"
+              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition-colors duration-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+
+            <button
+              type="button"
+              id="testimonialNext"
+              aria-label="Next testimonial"
+              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition-colors duration-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
 
@@ -665,6 +804,9 @@
     <script>
       new WOW().init();
     </script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Functions -->
     <script src="./main.js"></script>

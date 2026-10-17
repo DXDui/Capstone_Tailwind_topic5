@@ -74,3 +74,27 @@ filterButtons.forEach(function (button) {
   });
 });
 // Projects End
+
+// Comment Start
+// Swiper
+const testimonialSwiper = new Swiper(".testimonial-swiper", {
+  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  speed: 500,
+
+  navigation: {
+    nextEl: "#testimonialNext",
+    prevEl: "#testimonialPrev",
+  },
+
+  // Tương thích với màn hình nhỏ
+  breakpoints: {
+    768: {
+      spaceBetween: 40,
+    },
+  },
+});
+// Comment End
