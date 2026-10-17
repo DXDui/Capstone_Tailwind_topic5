@@ -131,3 +131,146 @@
   }
 }
 /* Projects End */
+
+/* Testimonial Start */
+/* Khung testimonial */
+.user-testimonial {
+  position: relative;
+  padding: 32px 34px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+/* Hai đường viền xanh và đỏ bên phải */
+.user-testimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 50%;
+  background-color: #4e6bff;
+  border-radius: 0 5px 0 0;
+}
+
+.user-testimonial::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 50%;
+  background-color: #ff5277;
+  border-radius: 0 0 5px 0;
+}
+
+/* Avatar bên trái, thông tin bên phải */
+.user-testimonial .testimonial-content {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  align-items: center;
+  gap: 46px;
+}
+
+/* Ảnh avatar */
+.user-testimonial .testimonial-avatar {
+  display: block;
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+/* Phần nội dung bên phải */
+.user-testimonial .testimonial-info {
+  min-width: 0;
+}
+
+/* Icon dấu ngoặc kép */
+.user-testimonial .testimonial-quote {
+  display: block;
+  width: 44px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+/* Nội dung đánh giá */
+.user-testimonial .testimonial-text {
+  margin-bottom: 36px;
+  color: #7b8491;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Tên, chức vụ và logo */
+.user-testimonial .testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-testimonial .testimonial-name {
+  margin-bottom: 6px;
+  color: #172033;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user-testimonial .testimonial-role {
+  color: #7b8491;
+  font-size: 15px;
+}
+
+.user-testimonial .testimonial-brand {
+  width: 112px;
+  max-width: 30%;
+  height: auto;
+}
+
+#testimonialNext:hover,
+#testimonialPrev:hover {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+/* Responsive cho tablet và điện thoại */
+@media (max-width: 768px) {
+  .user-testimonial {
+    padding: 24px;
+  }
+
+  .user-testimonial .testimonial-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .user-testimonial .testimonial-avatar {
+    width: 100%;
+    max-width: 280px;
+    height: 260px;
+    margin: 0 auto;
+  }
+
+  .user-testimonial .testimonial-text {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .user-testimonial .testimonial-quote {
+    width: 36px;
+    margin-bottom: 16px;
+  }
+
+  .user-testimonial .testimonial-footer {
+    align-items: flex-start;
+  }
+}
+/* Testimonial End */
